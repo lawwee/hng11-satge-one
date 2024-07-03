@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 
-const route = require("./route");
+const controller = require("./controller");
 
-app.use("/api", route);
+app.get("/api/hello", controller.user_location);
 
 const PORT = 3000;
 
