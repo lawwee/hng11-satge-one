@@ -3,6 +3,7 @@ const app = express();
 
 const controller = require("./controller");
 
+app.get('/', (req, res) => res.send("Hello"));
 app.get("/api/hello", controller.user_location);
 
 const PORT = 3000;
